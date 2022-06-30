@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <title>Bootstrap</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center">Movies catalog</h1>
+        
+        <div class="row d-flex flex-lg-row">
+            <div class="col-12 col-lg-4">
+                <div class="input-group flex-nowrap mb-3">
+                    <input type="text" class="form-control" placeholder="ave" aria-label="Username" aria-describedby="addon-wrapping">
+                </div>
+                
+                <div class="input-group flex-nowrap mb-3">
+                    <input type="text" class="form-control" placeholder="5" aria-label="Username" aria-describedby="addon-wrapping">
+                </div>
+                
+                <div class="input-group mb-3">
+                    <select class="form-select" id="inputGroupSelect01">
+                        <option selected>All</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                </div>
+                
+                <div class="input-group mb-3">
+                    <select class="form-select" id="inputGroupSelect01">
+                        <option selected>Rating (high to low)</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                </div>
+                
+                <div class="d-grid mb-3">
+                    <button class="btn btn-primary" type="button">Search</button>
+                </div>
+                
+                <h2 class="display-6 fw-bold mb-1">Bookmarked movies</h2>
+                
+                <div class="col border p-3">
+                    <p class="fw-bold mb-1">Avengers: Infinity War</p>
+                    
+                    <button class="btn btn-danger" type="button">Remove</button>
+                </div>
+                
+                <div class="col border p-3">
+                    <p class="fw-bold mb-1">The Avengers</p>
+                    
+                    <button class="btn btn-danger" type="button">Remove</button>
+                </div>
+                
+                <div class="col border p-3">
+                    <p class="fw-bold mb-1">12 Years a Slave</p>
+                    
+                    <button class="btn btn-danger" type="button">Remove</button>
+                </div>
+            </div>
+            
+            <div class="col-12 col-lg-8">
+                <p class="h3">Search results: 39</p>
+                
+                <div class="alert alert-primary" role="alert">
+                    Use the form on the left to search for a movie
+                </div>
+                
+                <div class="row mb-5">
+                    <div class="col-6">
+                        <div class="card mx-2">
+                            <img src="./images/photo_2022-06-30_15-12-48.jpg" class="card-img-top" alt="ironman">
+                            <div class="card-body">
+                                <p class="card-title h3"><mark>Ave</mark>ngers: Infinity War</p>
+                                <p class="card-text d-flex align-items-center"><img class="me-1" src="./images/date-71.svg" width="20" height="20" alt="date">2018</p>
+                                <p class="card-text d-flex align-items-center"><img class="me-1" src="./images/1289679474.svg" width="20" height="20" alt="star">8.7</p>
+                                <button type="button" class="btn btn-outline-primary mx-1">Watch trailer</button>
+                                <button type="button" class="btn btn-outline-info mx-1">More info</button>
+                                <button type="button" class="btn btn-outline-success mx-1">Bookmark</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="card mx-2">
+                            <img src="./images/photo_2022-06-30_15-12-45.jpg" class="card-img-top" alt="ironman">
+                            <div class="card-body">
+                                <p class="card-title h3">The <mark>Ave</mark>ngers</p>
+                                <p class="card-text d-flex align-items-center"><img class="me-1" src="./images/date-71.svg" width="20" height="20" alt="date">2012</p>
+                                <p class="card-text d-flex align-items-center"><img class="me-1" src="./images/1289679474.svg" width="20" height="20" alt="star">8.1</p>
+                                <button type="button" class="btn btn-outline-primary mx-1">Watch trailer</button>
+                                <button type="button" class="btn btn-outline-info mx-1">More info</button>
+                                <button type="button" class="btn btn-outline-success mx-1">Bookmark</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <nav class="d-flex align-items-center justify-content-center" aria-label="Page navigation example">
+                    <ul class="pagination">
+                      <li class="page-item"><a class="page-link bg-primary text-white" href="#">1</a></li>
+                      <li class="page-item"><a class="page-link" href="#">2</a></li>
+                      <li class="page-item"><a class="page-link" href="#">3</a></li>
+                      <li class="page-item"><a class="page-link" href="#">4</a></li>
+                    </ul>
+                  </nav>
+            </div>
+        </div>
+    </div>
+    <script src="./js/bootstrap.js"></script>
+</body>
+</html>
